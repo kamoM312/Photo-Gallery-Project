@@ -32,3 +32,25 @@ function createModal() {
 };
 
 createModal();
+
+class Modal {
+    constructor(modal) {
+        this.modal = modal;
+        this.attachEventListeners(); 
+    }
+
+    openModal(){
+        document.querySelectorAll('[data-model="true"]');
+        this.modal.removeAttribute('hidden');
+        this.modal.classList.add('active');
+    }
+
+    closeModal(){
+        this.modal.classList.removeAttribute('active');
+        this.modal.setAttribute('hidden', 'true');
+    }
+
+    attachEventListeners(){
+        
+    }
+}

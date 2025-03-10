@@ -33,24 +33,43 @@ function createModal() {
 
 createModal();
 
-class Modal {
-    constructor(modal) {
-        this.modal = modal;
-        this.attachEventListeners(); 
-    }
+// modal object
+// class Modal {
+//     constructor(modal) {
+//         this.modal = modal;
+        // this.attachEventListeners(); 
+//     }
 
-    openModal(){
-        document.querySelectorAll('[data-model="true"]');
-        this.modal.removeAttribute('hidden');
-        this.modal.classList.add('active');
-    }
+//     openModal(){
+//         document.querySelectorAll('[data-model="true"]');
+//         this.modal.removeAttribute('hidden');
+//         this.modal.classList.add('active');
+//     }
 
-    closeModal(){
-        this.modal.classList.removeAttribute('active');
-        this.modal.setAttribute('hidden', 'true');
-    }
+//     closeModal(){
+//         this.modal.classList.removeAttribute('active');
+//         this.modal.setAttribute('hidden', 'true');
+//     }
 
-    attachEventListeners(){
-        
-    }
-}
+    // attachEventListeners(){
+    //     this.modal.addEventlistener('click', (e) => {
+    //         e.target.classList.contains('btn_close')
+    //         ? this.modal.close(): null;
+    //     })
+    // }
+// }
+
+// get modal
+const modalContainer = document.querySelector('.modal_container');
+const modal = new modal(modalContainer);
+console.log(modal);
+
+// function openImageEventListeners(){
+//     document.querySelectorAll('[data-modal="true"]').forEach((modal) => {
+//         modal.addEventlistener('click', () => {
+//             modal.openModal();
+//         })
+//     })
+// }
+
+// openImageEventListeners();

@@ -12,21 +12,50 @@
     height: 100%;
     z-index: 2;
 
-    
+    opacity: 0;
+
+    display: grid;
+    place-items: center;
+
+    pointer-events: none;
+}
+
+.modal_container {
+    opacity: 1;
+    pointer-events: all;
 }
 
 .modal {
     display: grid;
     place-items: center;
+    overflow: hidden;
+    margin: 1rem;
+    max-width: 900px;
+    width: 100%;
+    
+    position: relative;
+}
+
+.modal_img {
+    display: flex;
+    max-height: 100vh;
 }
 
 .modal_img_size {
-    width: 600px;
-    height: 400px;
+    width: 900px;
+    height: 1200px;
+    object-fit: cover;
 }
 
 .modal_btns {   
     display: flex;
     flex-direction: row;
+    gap: 1rem;
+}
+
+.modal_overlay {
+    position: absolute;
+    right: 1rem;
+    top: 1rem;
 }
 

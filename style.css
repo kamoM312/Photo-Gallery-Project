@@ -20,7 +20,7 @@
     pointer-events: none;
 }
 
-.modal_container {
+.modal_container.active {
     opacity: 1;
     pointer-events: all;
 }
@@ -59,3 +59,6 @@
     top: 1rem;
 }
 
+button {
+    cursor: pointer;
+}
